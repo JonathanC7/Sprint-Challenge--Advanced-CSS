@@ -160,7 +160,7 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-#navbar {
+.navbar {
   height: 85px;
   width: 100%;
   background: #dee2e6;
@@ -168,13 +168,13 @@ p {
   flex-wrap: wrap;
   justify-content: center;
 }
-#navbar h2 {
+.navbar h2 {
   font-size: 40px;
   width: 100%;
   text-align: center;
   margin-top: 10px;
 }
-#navbar a {
+.navbar a {
   text-decoration: none;
   color: black;
   font-size: large;
@@ -282,4 +282,19 @@ footer {
   .btn {
     width: 100%;
   }
+}
+.page-wrapper {
+  background-color: #eeeeeeff;
+}
+.page-wrapper .abt-nav {
+  position: fixed;
+}
+.page-wrapper .about h2 {
+  margin: 10px 0px 10px 0px;
+}
+.page-wrapper .telescope {
+  width: 100%;
+}
+.page-wrapper .resize {
+  font-size: 20px;
 }
