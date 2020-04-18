@@ -161,7 +161,7 @@ p {
   margin: 0 auto;
 }
 #navbar {
-  height: 75px;
+  height: 85px;
   width: 100%;
   background: #dee2e6;
   display: flex;
@@ -172,6 +172,7 @@ p {
   font-size: 40px;
   width: 100%;
   text-align: center;
+  margin-top: 10px;
 }
 #navbar a {
   text-decoration: none;
@@ -180,13 +181,20 @@ p {
   padding: 8px 20px 8px 20px;
 }
 .btn {
-  background-color: #454A59;
+  background-color: #22283A;
   border-radius: 3px;
   width: 120px;
   height: 30px;
   color: white;
   font-size: 20px;
-  padding: 5px 0px 0px 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover {
+  color: black;
+  background: #dee2e6;
 }
 footer {
   color: #22283B;
@@ -197,6 +205,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .atmosphere {
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -248,4 +259,27 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .home .sky,
+  .home .launch {
+    display: none;
+  }
+  .home .space-images {
+    width: 1400px;
+  }
+  .home .walk {
+    flex-direction: column-reverse;
+    margin-top: 10px;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+  }
 }
