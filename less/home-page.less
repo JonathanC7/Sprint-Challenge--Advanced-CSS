@@ -1,7 +1,9 @@
 // Home Content
 
 .home {
-
+  .atmosphere{
+    border-radius: 5px;
+  }
   .intro {
 
     h2 {
@@ -56,9 +58,6 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-      }
     }
 
     .walk-img {
@@ -73,3 +72,27 @@
     }
   }
 }// home
+@media @phone{
+  .home{
+    .sky, .launch{
+      display: none;
+    }
+    .space-images{
+      width: 1400px;
+    }
+    .walk{
+      flex-direction: column-reverse;
+      margin-top: 10px;
+      .walk-img{
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+      }
+      .walk-text{
+        width: 100%;
+      }
+    }
+  }
+  .btn{
+    width: 100%;
+  }
+}

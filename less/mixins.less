@@ -1,1 +1,22 @@
 // Mixins Here
+.button-style(@background-color, @size){
+    background-color: @background-color;
+    border-radius: 3px;
+    width: @size * 4;
+    height: @size;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.border(@border-color, @style, @radius){
+    border: @border-color 1px @style;
+    border-radius: @radius;
+}
+.full-width-navbar(@height, @background-color){
+    height: @height;
+    width: 100%;
+    background: @background-color;
+}

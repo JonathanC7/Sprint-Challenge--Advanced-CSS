@@ -1,1 +1,28 @@
 // Navigation code here
+.navbar{
+    height: 85px;
+    width: 100%;
+    background: @main-border-color;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    h2{
+        font-size: 40px;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: large; 
+        padding: 8px 20px 8px 20px;
+    }
+}
+.btn{
+    .button-style(@btn-bg-color, 30px);
+}
+.btn:hover{
+    color: black;
+    background: @main-border-color;
+}
