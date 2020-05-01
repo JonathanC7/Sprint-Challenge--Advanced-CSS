@@ -206,8 +206,15 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home {
+  width: 100vw;
+}
+.home .navbar {
+  width: 100%;
+}
 .home .atmosphere {
   border-radius: 5px;
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -261,12 +268,15 @@ footer {
   border-radius: 10px;
 }
 @media only screen and (max-width: 500px) {
+  .home {
+    width: 100vw;
+  }
   .home .sky,
   .home .launch {
     display: none;
   }
   .home .space-images {
-    width: 1400px;
+    width: 300%;
   }
   .home .walk {
     flex-direction: column-reverse;
@@ -283,18 +293,6 @@ footer {
     width: 100%;
   }
 }
-.page-wrapper {
-  background-color: #eeeeeeff;
-}
-.page-wrapper .abt-nav {
-  position: fixed;
-}
-.page-wrapper .about h2 {
-  margin: 10px 0px 10px 0px;
-}
-.page-wrapper .telescope {
+.about .telescope {
   width: 100%;
-}
-.page-wrapper .resize {
-  font-size: 20px;
 }
